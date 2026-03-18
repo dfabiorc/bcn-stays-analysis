@@ -9,7 +9,7 @@ Análisis interactivo de alojamientos turísticos en Barcelona basado en datos r
 
 ## 📊 Demo
 
-> _Captura o GIF del dashboard aquí_
+![Dashboard](assets/dashboard.png)
 
 ## 🎯 Objetivo
 
@@ -36,8 +36,10 @@ Explorar el mercado de alojamientos turísticos de Barcelona para extraer insigh
 
 ```
 bcn-stays-analysis/
-├── data/
-│   └── listings.csv.gz       # Dataset de Inside Airbnb (no incluido en el repo)
+├── assets/
+│   └── dashboard.png         # Captura del dashboard
+├── data/                     # No incluido en el repo
+│   └── listings.csv.gz       # Descargar desde Inside Airbnb
 ├── app.py                    # Dashboard Streamlit
 ├── styles.css                # Estilos personalizados
 ├── analisis.ipynb            # Notebook de exploración
@@ -49,7 +51,7 @@ bcn-stays-analysis/
 
 **1. Clona el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/bcn-stays-analysis.git
+git clone https://github.com/dfabiorc/bcn-stays-analysis.git
 cd bcn-stays-analysis
 ```
 
@@ -57,7 +59,7 @@ cd bcn-stays-analysis
 ```bash
 python -m venv venv
 source venv/bin/activate.fish   # En fish shell
-# source venv/bin/activate      # En bash/zsh
+source venv/bin/activate      # En bash/zsh
 ```
 
 **3. Instala las dependencias**
@@ -74,16 +76,6 @@ Ve a [insideairbnb.com/barcelona](http://insideairbnb.com/barcelona), descarga `
 streamlit run app.py
 ```
 
-## 📦 Genera el requirements.txt
-
-```bash
-pip freeze > requirements.txt
-```
-
 ## 📌 Fuente de datos
 
 [Inside Airbnb](http://insideairbnb.com) — datos públicos de alojamientos en Barcelona.
-
----
-
-_Proyecto desarrollado como parte de un portfolio de ciencia de datos._
